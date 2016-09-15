@@ -1,20 +1,29 @@
+body {
+  background-color: #333;
+}
+
 div.container {
   width: 100%;
+  margin: auto;
 }
 header, footer {
   padding: 1em;
-  color: #FFFFFF;
-  background-color: #601830;
+  color: #333;
+  background-color: #FFFFFF;
   clear: left;
   text-align: center;
+  font-family: "helvetica"
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
+  position: relative;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  width: 972px;
+  font-family: "helvetica"
 }
 
 li {
