@@ -8,8 +8,8 @@ div.container {
 }
 header, footer {
   padding: 20px;
-  color: #333;
-  background-color: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #333;
   clear: left;
   text-align: center;
   font-family: "helvetica"
@@ -20,6 +20,9 @@ header, footer {
     list-style-type: none;
     margin:0;
     padding:0;
+    position: fixed;
+    top: 0;
+    width: 100%;
     text-align:center;
     background-color: #333;
     font-family: "helvetica"
@@ -36,4 +39,11 @@ header, footer {
 }
 .nav a:hover{
   background-color: #111;
+}
+
+p {
+  text-align: left;
+  float: left;
+  font-family: "helvetica";
+  color: #FFFFFF;
 }
