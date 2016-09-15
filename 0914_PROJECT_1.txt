@@ -13,7 +13,7 @@
 
 <ul>
   <li>Home</li>
-  <li>About</li>
+  <li>New</li>
   <li>Contact</li>
   <li>About</li>
 </li>
