@@ -3,11 +3,11 @@ body {
 }
 
 div.container {
-  width: 100%;
+  width: 962px;
   margin: auto;
 }
 header, footer {
-  padding: 1em;
+  padding: 20px;
   color: #333;
   background-color: #FFFFFF;
   clear: left;
@@ -15,29 +15,25 @@ header, footer {
   font-family: "helvetica"
 }
 
-ul {
-  list-style-type: none;
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  width: 972px;
-  font-family: "helvetica"
+.nav{
+    border-width:1px 0;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #333;
+    font-family: "helvetica"
 }
-
-li {
-  float: left;
+.nav li{
+    display:inline;
 }
-
-li a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.nav a{
+    display:inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    padding:14px 16px;
 }
-
-li a:hover {
+.nav a:hover{
   background-color: #111;
 }
