@@ -1,0 +1,43 @@
+<DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>0914_Project_1</title>
+<link rel="stylesheet" type="text/css" href="0914_stylessheet.css">
+
+</head>
+
+<body>
+
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+  <li>About</li>
+</li>
+
+
+<div class="container">
+
+<header>
+<h1>this is a document</h1>
+</header>
+
+<h1>
+</h1>
+
+<p>
+
+</p>
+
+<footer>
+<!-- information about whatever goes here -->
+</footer>
+
+</div>
+
+</body>
+
+</html>
