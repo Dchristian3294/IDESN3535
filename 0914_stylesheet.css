@@ -1,58 +1,107 @@
 body {
-  background-color: #333;
+  margin: 0px;
+  padding: 0px;
+  background-color: #333333;
 }
-
 div.container {
   width: 962px;
+  height: 600px;
   margin: auto;
 }
 header {
-  padding: 20px 20px 60px 20px;
-  color: #FFFFFF;
-  background-color: #333;
-  clear: left;
+  color: #f55079;
   text-align: center;
   font-family: "helvetica"
 }
-footer {
-  padding: 20px;
-  color: #FFFFFF;
-  background-color: #333;
-  clear: left;
-  text-align: center;
-  font-family: "helvetica"
-}
+
 .nav{
-    border-width:1px 0;
     list-style-type: none;
-    margin:0;
+    margin: 0 auto;
     padding:0;
-    position: fixed;
     top: 0;
     width: 100%;
     text-align:center;
-    background-color: #333;
+    background-color: #1f1f1f;
     font-family: "helvetica"
 }
 .nav li{
+    width: 962px;
     display:inline;
+    margin: 0 auto;
+    padding: 0;
 }
 .nav a{
     display:inline-block;
     color: #FFFFFF;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    padding:14px 16px;
+    padding: 18px 20px 18px 20px;
 }
 .nav a:hover{
   background-color: #111;
 }
-
 p {
   text-align: left;
-  position: relative;
   float: right;
-  max-width: 500px;
+  max-width: 650px;
+  font-family: "times new roman";
+  color: #c7c7d1;
+  padding-top: 0px;
+  font-size: 120%;
+}
+h2 {
+  color: #f55079;
+  font-size: 150%;
+  max-width: 650px;
+  float: right;
   font-family: "helvetica";
-  color: #FFFFFF;
+  padding-bottom: 0px;
+}
+img { 
+    width:280px; 
+    padding-top: 20px;
+    padding-bottom: 60px;
+    float: left;
+}
+div.content {
+  max-width:972px
+  margin:auto;
+  display: block;
+  text-align: center;
+}
+input[type=text] {
+    width: 972px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px;
+    background-color: #c7c7d1;
+    color: #1f1f1f;
+
+  }
+.endpage{
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    text-align:center;
+    background-color: #1f1f1f;
+    font-family: "helvetica"
+
+}
+.endpage li{
+    width: 962px;
+    display:inline;
+    margin: 0 auto;
+    padding: 0;
+}
+.endpage a{
+    display:inline-block;
+    color: #FFFFFF;
+    text-align: left;
+    text-decoration: none;
+    padding: 18px 20px 18px 20px;
+}
+.endpage a:hover{
+  background-color: #111;
 }
