@@ -5,7 +5,7 @@ body {
 }
 div.container {
   width: 962px;
-  height: 600px;
+  height: 350px;
   margin: auto;
 }
 header {
@@ -40,22 +40,14 @@ header {
 .nav a:hover{
   background-color: #111;
 }
-p {
-  text-align: left;
-  float: right;
-  max-width: 650px;
-  font-family: "times new roman";
-  color: #c7c7d1;
-  padding-top: 0px;
-  font-size: 120%;
-}
 h2 {
   color: #f55079;
   font-size: 130%;
   max-width: 650px;
-  float: right;
+  float: left;
   font-family: "helvetica";
   padding-bottom: 0px;
+  padding-left: 50px;
 }
 img { 
     width:280px; 
@@ -63,22 +55,6 @@ img {
     padding-bottom: 60px;
     float: left;
 }
-div.content {
-  max-width:972px
-  margin:auto;
-  display: block;
-  text-align: center;
-}
-input[type=text] {
-    width: 972px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 1px;
-    background-color: #c7c7d1;
-    color: #1f1f1f;
-
-  }
 .endpage{
     list-style-type: none;
     margin: 0px 0px 0px 0px;
