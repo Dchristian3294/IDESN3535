@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: #333333;
 }
 div.container {
@@ -46,7 +46,7 @@ h2 {
   max-width: 650px;
   float: left;
   font-family: "helvetica";
-  padding-bottom: 0px;
+  padding-bottom: 0;
   padding-left: 50px;
 }
 img { 
@@ -57,8 +57,8 @@ img {
 }
 .endpage{
     list-style-type: none;
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
+    margin: 0 0 0 0;
+    padding: 0;
     width: 100%;
     text-align:center;
     background-color: #1f1f1f;
