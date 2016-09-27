@@ -35,7 +35,7 @@ ul {
 }
 li {
 	display: inline;
-	margin: 0px 0px 20px 0px;
+	margin: 0 0 20px 0;
 	padding: 0;
 /*	border-bottom: 4px #f55079;*/
 }
@@ -46,6 +46,10 @@ li a{
 	padding: 16px 50px 16px 50px;
 	text-decoration: none;
 	border-bottom: 4px #f55079;
+	transition-property: background-color;
+	transition-delay: .2s;
+	transition-duration: 2s;
+	transition-timing-function: ease;
 }
 li a:hover {
 	background-color: #111111;
