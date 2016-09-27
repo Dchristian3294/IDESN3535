@@ -42,12 +42,15 @@ header {
     text-decoration: none;
     padding: 18px 20px 18px 20px;
     transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-delay: 0.2s;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.1s;
 }
 .nav a:hover{
-  background-color: #111;
+  background-color: #f55079;
+  text-transform: uppercase;
+  transition-property: text-transform;
+  transition-duration: 1s;
 }
 p {
   text-align: left;
