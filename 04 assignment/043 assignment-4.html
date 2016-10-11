@@ -45,6 +45,15 @@ If you have any questions, please send Saul a message through Slack (http://baiz
     </head>
     <body>
 
+    <script type="text/javascript">
+        function myName() {
+            var randomNumber = Math.random() * (fruit.length);
+            var randomFruitIndex = math.floor(randomNumber);
+            document.write("fruit :" + fruit[randomFruitIndex] );
+        }
+
+
+    </script>
    
 
         <h1>GETTING STARTED WITH BRACKETS</h1>
@@ -55,14 +64,16 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             03) On the line that says "Brackets has many users!", replace "many" (just delete the word) with a JavaScript snippet that multiples 10,000 by 10,000 and divides the sum by 5 and outputs the result.  
         -->
         
-        <p>Brackets has <span id="three"></span> users!</p>        
+        <p>Brackets has
   		<script>
-          	var x = 10000;
-        	var y = 5;
-        	var z = x * x / y;
-        	document.getElementById("three").innerHTML = z;
-        </script> 
-        
+            //	var x = 10000;
+            //	var y = 5;
+            //	var z = x * x / y;11111111111111
+            // document.getElementById("three").innerHTML = z;
+            var number_users = 10000 *10000 / 5;
+            document.write(number_users);
+        </script>
+            users!</p>
         <p>
             Welcome to Brackets, a modern open-source code editor that understands web design. It's a lightweight, 
             yet powerful, code editor that blends visual tools into the editor so you get the right amount of help 
@@ -86,7 +97,7 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             GET STARTED WITH YOUR OWN FILES
         -->
         
-        <h3><script>headerOne();</script></h3>
+     <!--   <h3><script>headerOne();</script></h3>-->
         <p>
             In order to edit your own code using Brackets, you can just open the folder containing your files.
             Brackets treats the currently open folder as a "project"; features like Code Hints, Live Preview and
@@ -105,7 +116,18 @@ If you have any questions, please send Saul a message through Slack (http://baiz
         <!--
             THE RELATIONSHIP BETWEEN HTML, CSS AND JAVASCRIPT
         -->
+        <script ="text/javascript">
+            function printH3Tag (content){
+            h3Open = "<h3>";
+            h3Close = "</h3>";
+            compiled ] h3Open = content + h3close;
+            compiledUpperer = compiled.toUpperCase();
+            document.write( compiledUpperer);
+            }
+        </script>
+        <script>
         <h3>Quick Edit for CSS and JavaScript</h3>
+                </script>
         <p>
             No more switching between documents and losing your context. When editing HTML, use the
             <kbd>Cmd/Ctrl + E</kbd> shortcut to open a quick inline editor that displays all the related CSS.
@@ -182,7 +204,7 @@ If you have any questions, please send Saul a message through Slack (http://baiz
 		05) Set the text content of the element with an ID of "qv" to "Quicker Viewer".
 		-->
 
-        <h3 id="quick viewer">Quick View</h3>
+        <h3 id="qv">Quick View</h3>
         <p>
             For those of us who haven't yet memorized the color equivalents for HEX or RGB values, Brackets makes
             it quick and easy to see exactly what color is being used. In either CSS or HTML, simply hover over any
@@ -218,9 +240,10 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             2
             2) Define a variable, myDate, and give it a value of 'today'. With document.write(), output the value of the variable on the line that says "<h2>Get involved</h2>" so that it reads "<h2>Get involved today</h2>".
         -->
-        <h2>Get involved 
+        <h2>Get involved
         <script>
-        var myDate = ('today');
+        var my_date = ("today");
+            document.write("my_date")
         </script>
         </h2>
         <p>
@@ -248,24 +271,32 @@ If you have any questions, please send Saul a message through Slack (http://baiz
             <li>Chat with Brackets developers on IRC in <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
         </ul>
 
+    <script type="text/javascript">
 
-    </body>
+        var allcontents = document.getElementById("extension").textContent ;
+
+        //console log
+        console.log ( allcontents );
+
+        //06 Create an array of seven pieces of fruit, then print the second and fifth pieces of fruit anywhere in the body of the document.
+
+        var fruits;
+        fruits = ['apple', 'orange', 'kiwi', 'pineapple', 'watermelon', 'grapes', 'peach'];
+
+//        document.getElementById('sixone').innerHTML = fruits[1];
+//        document.getElementById('sixtwo').innerHTML = fruits[4];
+        document.write (fruit[1]);
+        document.write (fruit[4]);
+        document.getElementById('qv').textContent = "Quicker Viewer";
+
+        var myWidth = 0, myHeight = 0;
+        document.write("width :"+window.innerWidth + "px");
+        document.write("height :"+window.innerHeight + "px");
+    </script>
     <script>
-
-    //06 Create an array of seven pieces of fruit, then print the second and fifth pieces of fruit anywhere in the body of the document. 
-    
-    var fruits;
-    fruits = ['apple', 'orange', 'kiwi', 'pineapple', 'watermelon', 'grapes', 'peach'];
-
-   	document.getElementById('sixone').innerHTML = fruits[1];
-   	document.getElementById('sixtwo').innerHTML = fruits[4];
-
-   	//07) Replace the <h3> tags by calling a function that accepts one argument: the text from the original <h3> tags. The function must also print the <h3> opening and closing tags. Note: this does not require obtaining the value of the <h3> elements in the document programatically. The code that calls the function should be placed in the locations of the <h3> tags throughout the HTML document.
-
-   	(function headerOne() {
-   		document.write('Projects in Brackets')
-   	})();
-    </script> 
+        document.body.style.backgroundcolor = "yellow";
+    </script>
+    </body>
 </html>
 <!--
 
