@@ -61,3 +61,8 @@ li a:hover {
 	color: white;
 	font-family: "helvetica"
 }
+
+.text_field_format {
+	background-color: #ddc4c1;
+	border: 1px solid #f55079;
+}
