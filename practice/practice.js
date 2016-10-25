@@ -6,5 +6,10 @@ function validate_form_data() {
     console.log("first_name");
 
     var email = document.getElementById('email');
-    console.log("email");
+    console.log("email" + first_name.value);
+
+    var first_name_value = first_name.value ;
+    var email_value = email.value ;
+
+
 }
