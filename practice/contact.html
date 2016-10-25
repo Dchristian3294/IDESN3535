@@ -16,18 +16,20 @@
 </header>
 <body>
 <div class="container_contact">
-    <br>
-    <br>
-    <label>Full Name: </label><input class="text_field_format" id="full_name" name="full_name" value=" ">
-    <br>
-    <br>
-    <label>Email Adress: </label><input class="text_field_format" id="email" name="email" value=" ">
-    <br>
-    <br>
-
+    <form name="contact_form" id="contact_form">
+        <br>
+        <br>
+        <label>Full Name: </label><input class="text_field_format" id="full_name" name="full_name" value=" ">
+        <br>
+        <br>
+        <label>Email Adress: </label><input class="text_field_format" id="email" name="email" value=" ">
+        <br>
+        <br>
+        <input type="button" id="submit_button" name="submit_button" value="Submit form" onclick="validate_form_data();"/>
+    </form>
 
 
 </div>
-
+<script type="text/javascript" src="practice.js"></script>
 </body>
 </html>

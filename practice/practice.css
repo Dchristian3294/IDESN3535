@@ -58,8 +58,16 @@ li a:hover {
 	max-width: 600px;
 	margin: auto;
 	text-align: center;
-	color: white;
-	font-family: "helvetica"
+	color: #ffffff;
+	font-family: "helvetica" ;
+}
+
+.container_contact {
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+	color: #ffffff;
+	font-family: "helvetica" ;
 }
 
 .text_field_format {
