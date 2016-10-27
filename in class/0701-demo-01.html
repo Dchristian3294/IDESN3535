@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery 2 | in-class demo</title>
+    <style type="text/css">
+        body {
+            font-family: Helvetica ;
+            line-height: 1.5em ;
+        }
+
+        .red_background {
+            background: red ;
+        }
+
+        .green_background {
+            background: green ;
+            color: white ;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>GETTING STARTED WITH BRACKETS</h1>
+<h2>Get involved</h2>
+    <p><a href="#" id="toggle_h1">toggle the appearance of h1</a></p>
+<p>
+    Brackets is an open-source project. Web developers from around the world are contributing to build
+    a better code editor. Many more are building extensions that expand the capabilities of Brackets.
+    Let us know what you think, share your ideas or contribute directly to the project.
+</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+        function do_something () {
+
+        }
+    $('#toggle_h1').on ( 'click', function ( event ) {
+        console.log('i was clicked') ;
+//        $('h1').fadeToggle( 3000 ) ;
+        $('h1').animate ( { fontSize: '4em', letterSpacing: '5px' }, 1000, 'swing' ) ;
+
+
+    } ) ;
+
+//    $('#toggle_h1').on ( 'mouseover', ''  )
+
+
+
+</script>
+
+</body>
+</html>
