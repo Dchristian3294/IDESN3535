@@ -7,7 +7,7 @@ h1 {
 	margin-top: 30px;
 	height: 80px;
 	color: white;
-	font-family: "helvetica";
+	font-family: "helvetica" ;
 	text-align: center;
 	font-size: 40px;
 	font-variant-caps: all-small-caps;
@@ -18,7 +18,7 @@ h1 {
 	font-size:16px;
 	font-variant-caps: small-caps;
 	color: #f55079;
-	font-family: "helvetica";
+	font-family: "helvetica" ;
 	text-align: center;
 }
 ul {
@@ -30,7 +30,7 @@ ul {
 	width: 100%;
 	text-align: center;
 	background-color: #333;
-	font-family: "helvetica"
+	font-family: "helvetica" ;
 
 }
 li {
@@ -73,4 +73,11 @@ li a:hover {
 .text_field_format {
 	background-color: #ddc4c1;
 	border: 1px solid #f55079;
+}
+
+.error_message_format {
+	text-transform: uppercase;
+	font-size: .7em;
+	font-weight: bold;
+	color: red;
 }
