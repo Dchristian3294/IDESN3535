@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>146.html</title>
+        <style type="text/css">
+
+            body {
+                margin: 0px ;
+            }
+
+            .red {
+                background: red;        
+            }
+
+            .green {
+                background: green;
+            }
+
+            .blue {
+                background: blue;
+            }
+
+            .orange {
+                background: orange;
+            }
+
+            .shared {
+                width: 150px ;
+                height: 150px;
+                padding: 5px ;
+                color: white;
+                font-family: Helvetica;
+                font-size: 20px ;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="slideshow">
+    <img src="images.jpg" />
+    <img src="695fd724-be3d-41d0-8c79-62e6f30fbf05.jpg" />
+    <img src="url.jpg" />
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slideshow').cycle({
+                fx: 'scrollUp',
+                timeout: 300
+                // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+            });
+        });
+    </script>
+
+    </body>
+</html>
