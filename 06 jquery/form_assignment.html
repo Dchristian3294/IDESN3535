@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+
+
+</head>
+<body>
+<div id="container">
+    <div id="container_body">
+        <div>
+            <h2 class="form_title">Sign up and receive 25% off your next meal!</h2>
+        </div>
+        <div id="form_name">
+            <div class="firstnameorlastname">
+                <form name="form" >
+                    <div id="errorBox"></div>
+                    <input type="text" name="fullname" value="" id ="fullname" placeholder="Full Name"  class="input_name" >
+
+                    <div id="email_form">
+                        <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email"  id="enteremail">
+                    </div>
+
+                    <div id="password_form">
+                        <input type="password" name="Password" value="" id="password" placeholder="Password" class="input_password">
+                    </div>
+                    <p class="favoritecolor">What's your favorite color?</p>
+
+                    <div id="radio_button">
+                        <input type="radio" id="radiobutton" name="radiobutton0" onClick="radiocolor('orange')" value="coral">
+                        <label >#005695</label>
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="radiobutton" id="radiobutton1" onClick="radiocolor('teal')" value="#1dbcbd">
+                        <label >#1dbcbd</label>
+                        <input type="radio" name="radiobutton" id="radiobutton2" onClick="radiocolor('slate')" value="#37474F">
+                        <label >#485B6E</label>
+                        &nbsp;&nbsp;&nbsp;
+                        <input name="radiobutton" type="radio" id="radiobutton3" onClick="radiocolor('lightblue')" value="#00B0FF">
+                        <label >#E65847</label>
+
+                    </div>
+
+                    <div>
+
+                    </div>
+                        <p id="submit" class="sign_user" onclick="validate_form_data()">SUBMIT</p>
+                </form>
+                <div id="message"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="form.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        alert('Document Ready!');
+    });
+</script>
+</body>
+</html>
+

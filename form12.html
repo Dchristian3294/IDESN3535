@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form - assignment 5</title>
+    <style type="text/css">
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+
+        .text_field_format {
+            background-color: #ddd ;
+            border: 1px solid #999 ;
+        }
+
+        .text_field_format_error {
+            background-color: #fceef6 ;
+            border: 1px solid #fb0000 ;
+        }
+
+        .hidden {
+            visibility: hidden ;
+        }
+        .visible {
+            visibility: visible ;
+        }
+
+        .error_message_format {
+            text-transform: uppercase;
+            font-size: .7em ;
+            font-weight: bold ;
+            color: #dd0000;
+        }
+
+    </style>
+    <script type="text/javascript">
+
+        function check_string_length ( string_to_check, minimum_length ) {
+
+            var string_to_check_length = string_to_check.length ;
+
+            if ( string_to_check_length > minimum_length ) {
+                console.log (string_to_check + " is long enough.")
+
+                // The first name is greater than 2 characters.
+                string_to_check.className = "text_field_format" ;
+                // first_name_error_message.className = "hidden error_message_format" ;
+
+            }
+            else {
+                console.log (string_to_check + " is too short.")
+
+                // Great shame. Failure message.
+
+                // Change the border to red and background to pink in the text field by changing the CSS class.
+                string_to_check.className = "text_field_format_error" ;
+
+                // Make the error message visible.
+                // first_name_error_message.className = "visible error_message_format" ;
+
+            }
+
+
+        }
+
+
+
+        function validate_form_data() {
+
+            var debugging_mode = false ;
+
+//            var is_production = false ;
+//
+//            alert ('hello there') ;
+//
+//            console.log(' this is a diagnostic message') ;
+//            console.group("test group") ;
+//            console.info('this is a message from console.info().') ;
+//            console.warn("this is a message from console.warn().") ;
+//
+//            console.log("The user has submitted the form.") ;
+//            console.groupEnd() ;
+
+
+            var first_name = document.getElementById('first_name') ;
+            console.log("first_name: " + first_name.value) ;
+
+            var email = document.getElementById('email') ;
+            console.log("email: " + email.value) ;
+
+            console.assert( ! debugging_mode, "this is only seen when we are debugging our code!") ;
+            // console.assert ( is_production, "this is only seen when we are debugging our code!" ) ;
+
+            var first_name_value = first_name.value ;
+            var email_value = email.value ;
+
+
+            // var first_name_value_length = first_name_value.length ;
+
+            // span tag with error message.
+            var first_name_error_message = document.getElementById('first_name_error_message') ;
+
+            // check the length of the first name.
+            // Shorter than 2? Fail! Otherwise, it's OK.
+
+            // check the length of the email.
+            // Shorter than 5? Fail! Otherwise, it's OK.
+
+            check_string_length(first_name_value, 2 ) ;
+//            console.log ( "got here") ;
+
+            check_string_length(email_value, 5 ) ;
+
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+<form name="registration_form" id="registration_form">
+
+    <label>First name: </label> <input class="text_field_format" type="text" id="first_name" name="first_name" value=""/> <span id="first_name_error_message" class="hidden error_message_format">The username must be greater than 2 characters.</span>
+    <br/>
+    <br/>
+    <label>Email: </label> <input class="text_field_format" type="text" id="email" name="email" value=""/> <span id="email_error_message" class="hidden error_message_format">The email must be greater than 5 characters.</span>
+    <br/>
+    <br/>
+    <input type="button" id="submit_button" name="submit_button" value="Submit form" onclick="validate_form_data();"/>
+
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</body>
+</html>
